@@ -9,14 +9,19 @@ id_passager :{
     type : String,
     required: true
 },
+id_conducteur :{ 
+    type : String,
+    required: true
+},
 nombre_place :{
     type: Number,
     required: true
 },
 confirmation :{
     type: Boolean,
-    required: true
+    default: null 
 }
-});
+},
+{ timestamps: true });
 
 export default mongoose.model("Reservation",reservationSchema)

@@ -1,5 +1,5 @@
 import express from 'express';
-import { createTrajet, deleteTrajet, findAll, findTrajet, findTrajetUrbain, getrajets, updateTrajet } from '../controllers/trajet.js';
+import { createTrajet, deleteTrajet, findTrajet, getrajets, getTrajetNumber, updateTrajet, updateTrajet2 } from '../controllers/trajet.js';
 import Trajet from '../models/trajet.js'
 import { createError } from '../Utils/error.js';
 
@@ -10,14 +10,14 @@ router.post("/", createTrajet);
 
 //UPDATE
 router.put("/:id", updateTrajet);
-
+router.put("/annuler/:id", updateTrajet2);
 
 //DELETE
 router.delete("/:id", deleteTrajet);
 
 //RECHERCHER
 router.get("/:id", findTrajet);
-//router.get("/Urbain", findTrajetUrbain);
+router.get("/Number/:conducteur_id", getTrajetNumber);
 
 //RECHERCHER TOUT
 router.get("/", getrajets);

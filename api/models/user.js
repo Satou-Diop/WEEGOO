@@ -21,13 +21,46 @@ password:{
     type : String,
     required: true
 },
-messages:{
-    type : Number,
-    default: 0  
-},
 telephone : {
     type : String,
     required :true
+},
+photo:
+{
+    type: String,
+    default:""
+},
+note:
+{
+    type:[Number]
+},
+isVerified : {
+    type : Boolean,
+    default: false
+},
+ncni : {
+    type : String,
+    default:""
+},
+npermis: {
+    type : String,
+    default:""
+},
+nassurance : {
+    type : String,
+    default:""
+},
+visite_technique : {
+    type : String,
+    default:""
+},
+isConducteur : {
+    type : Boolean,
+    default: false
+},
+isDetailed : {
+    type : Boolean,
+    default: false
 }
 },{timestamps : true});
 

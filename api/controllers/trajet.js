@@ -25,6 +25,23 @@ export const updateTrajet=async (req,res,next)=>{
 
 }
 
+export const updateTrajet2=async (req,res,next)=>{
+    const trajet= Trajet.findOne({
+        _id: req.params.id })
+    if(trajet){
+        try {
+            await Trajet.findByIdAndUpdate(req.params.id,{$inc:{ nombre_place_libre : req.body.nombre_place_libre }},
+               { new: true })
+           res.status(200).json("Annulation reussi")
+       } catch (err) {
+           next(err)
+       }
+    }else{
+        res.status(200).json("Erreur ")
+    }
+
+}
+
 
 export const deleteTrajet=async (req,res,next)=>{
     const id =req.params.id.toString().trim();
@@ -37,7 +54,7 @@ export const deleteTrajet=async (req,res,next)=>{
 
 }
 
-export const findTrajet=async (req,res)=>{
+export const findTrajet=async (req,res,next)=>{
 
     try {
         const findTrajet = await Trajet.findById(req.params.id)
@@ -50,34 +67,77 @@ export const findTrajet=async (req,res)=>{
 }
 
 export const getrajets = async (req, res, next) => {
-    const { depart, destination, ...others } = req.query;
+    const option =req.query.option
+    switch(option){
+    case "1" :   
     try {
-      const trajets = await Trajet.find({
+     const { depart, destination,...others } = req.query;
+    const trajets = await Trajet.find({
         ...others,
         
-      }).limit(req.query.limit);
+      },null,
+      {sort: { createdAt : -1}})
+      
       res.status(200).json(trajets);
     } catch (err) {
       next(err);
-    }
+    } ;break;
+    case "2" :        
+    try {
+    const { depart, destination,...others } = req.query;
+    const trajets = await Trajet.find({
+    ...others,
+    
+        },null,
+        {sort: { prix_place : "1"}})
+        
+        res.status(200).json(trajets);
+        } catch (err) {
+        next(err);
+        } ;break;
+    case "3" :        
+    try {
+    const { depart, destination,...others } = req.query;
+    const trajets = await Trajet.find({
+    ...others,
+    
+        },null,
+        {sort: { nombre_place_libre : "-1"}})
+        
+        res.status(200).json(trajets);
+        } catch (err) {
+        next(err);
+        } ;break;
+        default:        
+        try {
+        const { depart, destination,...others } = req.query;
+        const trajets = await Trajet.find({
+        ...others,
+        
+            },null,
+            {sort: { prix_place : "1"}})
+          
+            res.status(200).json(trajets);
+            } catch (err) {
+            next(err);
+            } ;break;
+    } 
+    
+    
   };
 
 
-export const findTrajetUrbain=async (req,res,next)=>{
-const depart=req.query.depart.split(",") 
+  export const getTrajetNumber = async (req, res, next) => {
     try {
-        const list =  await Promise.all(
-            depart.map(point_depart => {
-            return Trajet.countDocuments({point_depart:point_depart});
-            })
-        );
-        res.status(200).json(list)
-    } catch (err) {
-        next(err)
-    }
-
-}
-
+        const Trajets = await Trajet.find({
+          conducteur_id: req.params.conducteur_id,
+        });
+        res.status(200).json(Trajets);
+      } catch (err) {
+        res.status(500).json(err);
+      }
+    
+  };
 
 export const findAll =async (req,res,next)=>{
     

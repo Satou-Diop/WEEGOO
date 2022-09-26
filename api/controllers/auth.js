@@ -50,7 +50,7 @@ export const connexion= async (req,res,next)=>{
          if(req.cookies[`${user._id}`]){
             req.cookies[`${user._id}`]=""
          }
-        const {password, createdAt,updatedAt, ...otherDetails}=user._doc;
+        const {password, updatedAt, ...otherDetails}=user._doc;
         res.cookie(String(user.id), token, { httpOnly:true , expires : new Date(Date.now() + 1000 * 60),}).status(200).json({ ...otherDetails});
        
           return res.status(200).json({ message : "Log Succefully !!!", user: user, token});
