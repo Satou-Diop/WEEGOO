@@ -1,0 +1,25 @@
+.T_List {
+  flex: 4;
+}
+.T_List h1 {
+ text-align: center;
+ margin-bottom: 1%;
+}
+.T_DIV{
+  margin-left: 15%;
+  margin-right: 15%;
+ 
+}
+.btn_close{
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1%;
+  color: red;
+}
+.desc{
+  padding-inline-start: 2%;
+  font-size: 18px;
+  color: red;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
