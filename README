@@ -1,0 +1,13 @@
+# WEEGO
+
+## HOW TO TEST
+
+1. Step 1
+Clone the repository: git clone ...
+
+2. install dependencies
+Run `npm install` to install all dependencies.
+
+3. Start server
+....
+
