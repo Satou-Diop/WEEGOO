@@ -1,0 +1,254 @@
+.PO_section{
+    background-color: rgba(233, 236, 236, 0.884);
+    min-height: 80vh;
+   
+}
+.spinner{
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+.breads{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+  
+}
+.breads .p1 {
+  margin-bottom:5px;
+  text-align: start;
+  font-size: large;
+  letter-spacing: 1PX;
+  margin-top: 1%;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(83, 83, 83);
+  
+}
+.breads .p2 {
+  margin-bottom:5px;
+  text-align: end;
+  font-size: large;
+  letter-spacing: 1PX;
+  font-weight: 500;
+  margin-top: 1%;
+  color: rgb(83, 83, 83);
+}
+.GRID_PROFIL {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows:  0.2fr 1.8fr;; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "info_user"
+      "complement_profil"; 
+      margin-left: 20%;
+      margin-right: 20%;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid rgba(128, 128, 128, 0.671);
+      border-radius: 4px;
+    min-height: fit-content;
+  }
+  .info_user {
+    display: grid; 
+    grid-template-columns: 1.4fr 0.6fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "content_info photo_user"; 
+    grid-area: info_user; 
+  }
+
+  
+  .photo_user { 
+    margin-top: 5%;
+    margin-bottom: 5%;
+    grid-area: photo_user; 
+    display: grid;
+    justify-content: center;}
+
+    .photo_user button{
+        border:2px solid #077bff;
+        padding: 1px;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        border-radius: 6px;
+        color: #077bff;;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    .photo_user button:hover{
+        background-color: #077bff;;
+        color: white;
+      }
+      img {
+        object-fit: cover;
+        width: 130px;
+        height: 130px;
+        box-shadow:0 0 10px 0 rgba(51, 47, 47, 0.096);;
+        border-radius: 100px;
+        z-index: 0;
+      }
+  .content_info { 
+    margin-left: 5%;
+    display: grid;
+    grid-area: content_info; 
+    font-weight: 600;
+}
+.content_info h1{
+  margin-top: 1%;
+  color: rgb(6, 6, 53);}
+.content_info p {
+    font-size: 12px;
+    margin-bottom: 10%;
+    color: rgb(6, 6, 53);
+}
+  
+  .complement_profil { 
+    grid-area: complement_profil;
+    padding: 0;
+    margin-bottom: 0%;
+ }
+
+  .PVehicule { 
+    grid-area: RVehicule;
+    border-top: 3px solid rgba(233, 236, 236, 0.884);
+    display: flex;
+    padding: 30px;
+    color: #081f52;
+    justify-content: space-between;
+  }
+  .Pnote{
+    grid-area: RVehicule;
+    border-top: 3px solid rgba(233, 236, 236, 0.884);
+    display: flex;
+    font-size: 20px;
+    padding: 30px;
+    font-weight: 500;
+    color: #0749a0;
+    justify-content: space-between;
+
+  }
+  .PVehicule:hover,.Pnote:hover, .Pcom:hover{
+    background-color: rgba(238, 246, 253, 0.733);
+  }
+ 
+  .Pcom{
+        color: #009ac9; 
+        font-size: 22px; 
+        display: flex;
+        padding: 30px;
+        border-top: 3px solid rgba(233, 236, 236, 0.884);
+        font-weight: 500;
+        justify-content: space-between;
+  }
+  .Psignaler{
+    border-top: 3px solid rgba(233, 236, 236, 0.884);
+    padding: 0px;
+    justify-content: end;
+    display: flex;
+    margin-bottom: 3%;
+  }
+  .Psignaler button{
+    background-color: #009ac9;
+    color: white;
+    border: none;
+    padding: 4px;
+    margin-top: 2%;
+    margin-right: 5%;
+    border-radius: 5px;
+  }
+  .Psignaler button:hover{
+    background-color: #02c4ff;
+    zoom: 110%;
+  }
+  .photo_v{
+    border-radius: 0px;
+    width:380px;
+    height: 200px;
+    margin:1%;
+    border: 1px solid grey;
+    border-radius: 2px;
+    
+}
+.div_photo{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+    justify-content: center;}
+.comment_area{
+  padding-inline:5% ;
+  padding-top: 2%;
+  font-size: 20px;
+  font-weight: 600;
+}
+ .title{
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 25%;
+  color: #021235;
+}
+.comment_area input{
+  border: 1px solid grey;
+  width: 95%;
+  font-size: 18px;
+  padding: 3px;
+  margin: 1%;
+}
+.comment_area button{
+  border: 1px solid grey;
+  padding: 2px 9px;
+  border-radius: 5px;
+  background-color: #081f52;
+  color: white;
+}
+.comment_area button:hover{
+  background-color: #133a8f;
+
+}
+.COM_SECTION{
+  height: 50vh;
+  overflow-y: scroll;
+}
+.poster{
+  display: flex;
+  justify-content: end;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+  @media screen and (min-width: 768px) and (max-width: 1024px)  {
+    .GRID_PROFIL{
+    margin-left: 10%;
+    margin-right: 10%;
+    }
+    .photo_user { 
+      margin-top: 5%;
+      margin-bottom: 2%;
+    }
+    
+      .breads{
+        margin-left: 10%;
+        margin-right:  10%;}
+        
+        
+    
+  }
+.text_span{
+  text-decoration: underline ;
+  color: #020325;
+  font-weight: 600;
+}
+.text_v{
+  font-size: 20px;
+  padding-inline:2%;
+}
+.text_T{
+  color: #020325;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 20%;
+}

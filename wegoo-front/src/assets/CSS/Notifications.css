@@ -1,0 +1,71 @@
+.Ncontainer{
+    min-height: max-content;
+    margin-left: 20%;
+    margin-top: 0%;
+    margin-right: 20%;
+    border: 1px solid rgba(155, 153, 153, 0.548);
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 2%;
+    min-height: 80vh;
+  }
+.Ncontainer h1{
+    text-align: center;
+    margin-top: 2%;
+    color: rgb(8, 8, 68);
+    margin-bottom: 10px;
+   
+}
+.Nsection{
+    background-color:#e2e8ec;
+}
+.noResult{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: gray;
+    margin-top: 20%;
+}
+.close_modal{
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+    margin-top: 0%;
+    
+}
+.link_modal{
+    display: flex;
+    justify-content: center;
+}
+.code{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 5%;
+}
+.mtitle{
+    color: rgb(3, 3, 46);
+    font-size: 22px;
+    font-weight: 600;
+}
+.aller_res{
+    border: 2px solid;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(7, 63, 216);
+}
+.aller_res:hover{
+    color: white;
+    background-color: rgb(7, 63, 216)
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .Ncontainer{
+        margin-left: 10%;
+        margin-right: 10%;   
+    }
+}

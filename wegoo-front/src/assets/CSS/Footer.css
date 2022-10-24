@@ -1,0 +1,142 @@
+    .footer{
+    background:#0c1930;
+    padding:6px 0px;
+    font-family: 'Play', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    }
+    .copyright{
+      color: #bebbbb;
+      font-size: 14px;
+      margin-left: 10%;
+    }
+    .reseau_social{
+      display: flex;
+      color: #fff;
+      margin-right: 10%;
+    }
+    .reseau_social i{
+      margin-right: 40%;
+    }
+    .reseau_social i:hover{
+      border: 1px solid white;
+      border-radius: 50px;
+      padding: 2px;
+    }
+    
+   
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .reseau_social i{
+      margin-right: 20%;
+    }
+    .copyright{
+      color: #bebbbb;
+      font-size: 12px;
+      margin-left: 1%;
+    }
+    .subscribe-form input {
+      width: 60%;
+      margin-left: 0%;
+      }
+      
+      .subscribe-form button {
+        right: 0;
+        background: #0d96f1;
+        padding: 14px 13px;
+       
+      }
+    }
+
+    ul {
+      margin: 0px;
+      padding: 0px;
+    }
+    .foo-section {
+    background: #112446;;
+    margin-bottom: 0%;
+    }
+    
+    
+    
+    .foo-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 28px;
+    }
+    .foo-widget h4{
+      color: #fff;
+    }
+    .foo-widget-heading h3  {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+    }
+    .foo-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #ee4b00;
+    }
+    .foo-widget ul li {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 12px;
+    }
+    .foo-widget ul li a:hover{
+    color: #e7e8e9;
+    text-decoration: underline;
+    }
+    .foo-widget ul li a {
+    color: #ffffff;
+    text-transform: capitalize;
+    }
+    .subscribe-form {
+    position: relative;
+    overflow: hidden;
+    }
+    .subscribe-form input {
+    width: 80%;
+    padding: 14px 28px;
+    background: #ffffffd8;
+    border: 1px solid #c9d8eb;
+    color: rgb(0, 0, 0);
+    }
+    .subscribe-form input::placeholder{
+      color: #4e5053;
+    }
+   
+    .subscribe-form button {
+      right: 0;
+      background: #0d96f1;
+      padding: 14px 15px;
+      border: 1px solid #0d96f1;
+      border-radius: 8px;
+      top: 25%;
+    }
+    .subscribe-form button:hover{
+      background-color:  #0d77f1;
+      border: 1px solid #0d77f1;
+    }
+    .subscribe-form button i{
+      color: #fff;
+    }
+    .copyright-area{
+    background: #202020;
+    padding: 25px 0;
+    }
+    
+    .foo-menu li {
+    display: inline-block;
+    margin-left: 20px;
+    }
+    

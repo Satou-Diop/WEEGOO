@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  background:none;
+  box-sizing: border-box;
+  font-family: -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  Helvetica,
+  Arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol";
+}
+.boutton{
+  background-color: rgba(240, 248, 255, 0);
+  color: #022766;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  border: none;
+}
+.boutton:hover{
+  color: #588cecaf;
+}
+.logo{
+  border-radius: 0px;
+  box-shadow: none;
+  width: 35px;
+  height: 35px;
+}
+i{
+  margin-right: 10%;
+}
+.notif{
+  margin-right: 15px;
+}
+.Hcontainer{
+margin-left: 8%;
+margin-right: 8%;
+margin-top: 0%;
+margin-bottom: 0%;
+height: 80px;
+background-color: none;
+
+}
+.Hmenu{
+  padding-left: 5%;
+  padding-bottom:2%;
+  padding-top: 2%;
+  font-size: 20px;
+  font-weight: 500;
+}
+a{
+  color:#022766;
+  text-decoration: none;
+}
+a:hover{
+  color: #588cecaf;
+}
+.Hbutton{
+  font-size: 20px;
+}
+.rouge{
+  background: red;
+  color: red;
+}
+.Hicone{
+ color: #022766; 
+ text-transform: capitalize;
+ margin-top: 22%;
+ font-size: 90%;
+}
+.Hlog{
+  color: #022766;
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 10%;
+}
+.Hlog:hover{
+  color: #588cecaf;  
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .Hcontainer{
+      margin-left: 0%;
+      margin-right: 0%;
+      height: 100%;
+
+  } 
+  
+}
+@media screen and (max-width:768px) {
+  .Hcontainer{
+      margin-left: 0%;
+      margin-right: 0%;
+      margin-top: 2%;
+      margin-bottom: 1%;
+      height: 60%;
+
+  } 
+  .Hlog{
+    size: 50%;
+    font-size: 16px;
+  }
+}

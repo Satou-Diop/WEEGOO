@@ -1,0 +1,48 @@
+.ReSection{
+    background-color: #d5e1ecee;;
+    min-height: 80vh;
+}
+
+.containerRE{
+    margin-left: 20%;
+    margin-right: 20%;
+    min-height: 80vh;
+    background-color: rgb(224, 223, 223);
+    border: 1px solid rgba(66, 65, 65, 0.541);
+    border-radius: 6px;
+}
+.button{
+    padding: 15px;
+    border: none;
+    border: 2px solid #cdd1d4;;
+    border-bottom: 0px;
+    background-color: #cdd1d4;
+    color: rgb(44, 42, 42);
+    font-weight: 500;
+    width: 50%;
+    
+}
+.button:disabled{
+    background-image: linear-gradient(160deg, #052d6e 0%, #0ba8d8 100%); 
+    border: none;
+    color: white;
+    border: 2px solid rgba(200, 205, 211, 0.575);
+    border-bottom: 0px;
+   
+}
+.noRes{
+    margin-top: 20%;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(73, 68, 68);
+    font-size: 20px;
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+    
+    .containerRE{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

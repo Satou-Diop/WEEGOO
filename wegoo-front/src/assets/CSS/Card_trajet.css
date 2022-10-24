@@ -1,0 +1,91 @@
+
+div{
+    margin-top: 0%;
+}
+
+.carte_trajet{
+    width: 100%;
+    display: block;
+    align-self: center;
+    justify-content:center;
+    border: 1px solid rgb(173, 172, 172);
+    background-color: rgb(255, 255, 255);
+    padding-inline: 5%;
+    
+    box-shadow: 5px 5px 5px 0px rgba(61, 61, 61, 0.137);
+}
+
+.infoC{
+    margin-bottom: 2%;
+}
+.white{
+    color: white;
+}
+
+.enteteC{
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+
+.enteteC div{
+    margin-top: 1%;
+}
+
+.Tparams{
+display: flex;
+justify-content: space-between;
+
+}
+
+.Tmodifier{
+    border:2px solid #07e237;
+    color: #08e739;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 3%;
+    margin-left: 15px;
+    border-radius: 50px;
+}
+
+.Tsupprimer{
+    margin-top: 3%;
+    border:  2px solid red;
+    color: red;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 50px;
+}
+   
+.Tmodifier:hover{
+    background: #15fd48;
+    color: black;
+}
+
+.Tsupprimer:hover{
+    background: red;
+    color: black;
+}
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+       
+        .carte_trajet{
+            width: 100%;
+            
+        }  
+       
+        
+      }
+
+      @media screen and (max-width: 767px) {
+
+        .carte{
+            width:100%;
+            font-size: 70%;
+            margin-bottom: 8%;
+        }
+        
+        
+        
+      }
+      

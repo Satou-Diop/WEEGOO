@@ -1,0 +1,212 @@
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:30vh;
+    
+  }
+  
+  .context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+  }
+  
+  
+  .con3 {
+
+    /* fallback for old browsers */
+    background-image: linear-gradient(120deg, #7ea0d6 0%, #c0e6f8 100%); 
+   
+    min-height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-position: center center;
+    padding: 15px;
+  }
+  .icone_title{
+    color: rgb(6, 4, 80);
+      display: -ms-flexbox;
+      font-weight: 500;
+      display: flex;
+      letter-spacing: 1px;
+      font-size: 20px;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+   
+  }
+  .con3 form {
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    top:15%;
+  }
+  
+  .con3 form .inner-form {
+    background: rgba(255, 255, 255, 0.247);
+    padding: 15px;
+    border-radius: 3px;
+    display: -ms-flexbox;
+    display: column;
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    box-shadow: rgba(36, 36, 39, 0.2) 0px 7px 29px 0px;
+  }
+  .con3 form .inner-form label {
+    color: #050831;
+    margin-left: 5%;
+    display: inline-block;
+    font-weight: 600;
+    
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 0%;
+    font-family: 'Segoe UI' sans-serif;
+  }
+  
+  .con3 form .inner-form input {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    width: 95%;
+    padding: 8px;
+    position: relative;
+    border-color: #31313100;
+    height: auto;
+    margin-top: 0%;
+    background-color: rgba(255, 255, 255, 0.767);
+    margin-bottom: 5px;
+  }
+
+  .con3 form .inner-form .input-field {
+    position: relative;
+    border-right: 1px solid rgba(221, 221, 221, 0);
+    height: auto;
+  }
+  
+  .con3 form .inner-form input:focus {
+    box-shadow: none;
+    border-color: #039ef7;
+    outline: 0;
+  }
+  
+  .con3 form .inner-form .input-field input {
+    height: 60px;
+    background: #fff;
+    border-radius: 3px;
+    border: 0;
+    display: block;
+    width: 100%;
+    padding: 10px 15px 10px 45px;
+    font-size: 16px;
+    color: rgb(14, 13, 13);
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .con3 form .inner-form .input-field input.placeholder {
+    color: #9a9a9a;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  
+  
+ 
+  .con3 form .inner-form  .btn-search {
+    height: 50px;
+    min-width: 340px;
+    max-width: 340px;
+    background: #035185;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    transition: all .2s ease-out, color .2s ease-out;
+    border: 0;
+    cursor: pointer;
+    font-weight: 400;
+    
+    margin-bottom: 4%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .con3 form .inner-form  .btn-search:hover {
+    background: #018cfffb;
+  }
+  .div_button{
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .con3 form .inner-form {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+    }
+    .con3 form .inner-form .input-field {
+      margin-bottom: 15px;
+    }
+   
+   
+  }
+  
+  @media screen and (max-width: 767px) {
+    .con3  {
+     min-height: 120vh;
+    }
+    
+    .con3 form {
+      width: 90%;
+      top:15%;
+    }
+  
+    .con3 form .inner-form input {
+      width: 90%;
+      justify-content: center;
+      padding-right: 5px;
+      margin-right: 5px;
+    }
+    .con3 form .inner-form label {
+      font-size: 14px;
+  
+    }
+    .con3 form .inner-form span {
+      font-size: 12px;
+    }
+   
+    
+    .con3 form .inner-form  .btn-search {
+      min-width: 200px;
+      max-width: 200px;
+      
+      
+    }
+  }
+  .erreur_message{
+    margin-left: 2%;
+    color: red;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .erreur_message2{
+    margin-left: 5%;
+    color: red;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  
+ 

@@ -1,0 +1,109 @@
+
+#article_container {
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    min-height: 400px;
+    margin: 0 auto;
+    margin-top: 56px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid rgba(167, 166, 166, 0.719);
+    display: flex;
+
+}
+
+.article_container_img {
+    flex-grow: 1;
+    min-width: 45%;
+    background-color: #d4d9df;
+    background: url("https://sf2.auto-moto.com/wp-content/uploads/sites/9/2020/03/covoiturage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.article_container_content {
+    flex-grow: 1;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1B4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #04456b;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.pB4 {
+    font-family: 'PT Serif', serif;
+    font-size: 1.125rem;
+    color: #626a73;
+    text-align: center;
+    line-height: 33px;
+}
+
+.btnB4 {
+    padding: 20px 40px;
+    outline: none;
+    border: 1px solid #99a3b4;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #33363b;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+}
+
+.btnB4:hover {
+    background-color: #f0f0f0;
+}
+
+.dividerB4 {
+    width: 80px;
+    height: 4px;
+    background-color: #33363b;
+    margin: 20px 0;
+}
+
+.line{
+    width: 35px;
+    height: 1px;
+    background-color: #33363b;
+}
+
+@media (max-width: 768px) {
+    #article_container {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 0;
+    }
+    .article_container_img {
+        width: 100%;
+        height: 400px;
+    }
+    .article_container_content{
+        width: 100%;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #article_container {
+        flex-wrap: wrap;
+    }
+    .article_container_img {
+        width: 100%;
+        height: 400px;
+    }
+    .article_container_content{
+        width: 100%;
+    }
+  }

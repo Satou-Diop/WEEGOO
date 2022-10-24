@@ -1,0 +1,45 @@
+
+.COM_DIV { 
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "COM_DATE"
+      "COM_USER"
+      "COM_TEXT"
+      "COM_NOTE";
+    border-bottom: 1px solid grey;
+    padding-inline:4% ;
+
+  }
+  
+  .COM_DATE { 
+    grid-area: COM_DATE;
+    display: flex;
+    justify-content: end;
+    font-size: 11px;
+
+}
+
+  
+  .COM_USER { 
+    grid-area: COM_USER; 
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(2, 2, 41);
+    margin-top: 0%;
+
+}
+  
+  .COM_TEXT { grid-area: COM_TEXT;
+    font-style: italic;
+    color: rgb(75, 73, 73);
+ }
+  
+  .COM_NOTE { 
+    grid-area: COM_NOTE;
+    font-size: 12px;
+}

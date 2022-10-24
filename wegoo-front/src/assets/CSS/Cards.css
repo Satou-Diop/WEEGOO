@@ -1,0 +1,150 @@
+.containerT {  
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1.7fr 0.3fr; 
+    grid-template-rows: 0.5fr 1.2fr 0.9fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Ttitre Tdate"
+      "Tinformations Tinformations"
+      "TConducteur Tbouton";
+    width: 650px;
+    margin-left: 3px;
+    background-color: rgb(255, 255, 255);
+    padding-inline: 5%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    border-radius: 10px;
+    border: 1px solid rgba(102, 99, 99, 0.541);
+    box-shadow: rgba(0, 0, 0, 0.014) 0px 3px 6px, rgba(71, 69, 69, 0.23) 0px 3px 6px;
+  }
+  
+  .Tbouton { grid-area: Tbouton; }
+  
+  .TConducteur { 
+    grid-area: TConducteur;
+    display:flex ;
+    padding-bottom: 5px; }
+  
+  .Tdate {
+    grid-area: Tdate;
+    text-align: end; 
+    font-size: 11px;
+    margin-top: 5%;
+    height: min-content;
+}
+  
+  .Tinformations { 
+    grid-area: Tinformations;
+    margin-top: 1%;
+    text-transform: capitalize; 
+    }
+  
+  .Ttitre { 
+    grid-area: Ttitre; 
+    color: rgb(2, 2, 39);
+    margin-top: 5%;
+    display: flex;
+    height: min-content;
+    justify-content: space-between;
+    
+}
+  
+
+.Tlink_b{
+        border-radius: 10px;
+        border: 1px solid rgba(94, 90, 90, 0.315);
+        background: rgb(11, 118, 218);
+        color: #fff;
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        width: 120px;
+        padding: 6px ;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        
+      }
+
+.Tlink_b:hover{
+    background: #3fa2ff;  
+}
+
+.Inf_Con{
+    margin-left: 3%;
+    color: rgb(46, 43, 43);
+    font-weight: 500;
+}
+.Inf_Con .note{
+    font-size: 13px;
+    color: rgba(51, 47, 47, 0.836);
+}
+.prix{
+    display: flex;
+    justify-content: end;
+    font-weight: 600;
+    color: rgb(57, 173, 240);
+}
+.date{
+    display: flex;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #044785;
+    font-weight: 500;
+}
+.nb_place{
+    color: rgb(2, 74, 116);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: end;
+    margin-left: 1%;
+    text-transform: none;
+}
+.icone{
+ margin-bottom: 4px;
+}
+.Tpoint{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+.Tplace{
+    display: flex;
+    margin-bottom: 2px;
+}
+.Tdepart ,.Tdestination{
+    color: rgb(0, 0, 66);
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+.containerT{
+    width: 98%;
+    margin-bottom: 7%;
+}
+
+.nb_place{
+    font-size: 14px;
+}
+.date{
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width: 767px) {
+
+.containerT{
+    width: 95%;
+    font-size: 70%;
+    margin-bottom: 8%;
+}
+.Tlink_b{
+    margin-top: 10%;
+    width: 100px;
+    font-size: 12px;
+}
+
+}
+      

@@ -1,0 +1,257 @@
+.GRID_RES2 {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns:  0.4fr 1.6fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "user_RES2 info_RES2"; 
+    padding-inline-start: 5%; 
+    background-color: rgba(255, 255, 255, 0.911);
+    border-bottom:1px solid #565d61;
+    border-top:1px solid #e2e8ec;
+  }
+
+  .info_RES2 {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1.6fr 0.4fr; 
+    gap: 0px 0px;
+    font-weight: 500; 
+
+    grid-template-areas: 
+      "info_content2"
+      "button_RES2"; 
+    grid-area: info_RES2; 
+  }
+  .info_RES2 span, u{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: rgb(2, 11, 90);
+  }
+  .info_RES2 u{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .button_RES2 { 
+    grid-area: button_RES2;
+    justify-content: end;
+    display: flex;
+    margin-right: 20%;
+    margin-bottom: 2%; }
+
+  .info_content2 { 
+    margin-top: 2%;
+    grid-area: info_content2;
+    font-size: 18px;
+    margin-bottom: 0%;
+    color: #000000;
+ }
+  .user_RES2 { 
+    grid-area: user_RES2;
+    margin-top: 5%;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    display: grid;
+    align-items: center;
+    margin-bottom: 5%;
+   
+ }
+ .user_RES2 span{
+  letter-spacing: 0.5px;
+  font-weight: 700;
+ font-size: 12px;
+ }
+ .user_RES2 button{
+  border: none;
+    padding-inline: 10px;
+    border:2px solid #009ac9;
+    margin-top: 3%;
+    background-color: #009ac9;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+  }
+ .user_RES2 button:hover{
+    background-color: #04c1fa;
+    color: white;
+    border:2px solid #04c1fa;
+  }
+
+ .accepter{
+    background-color: #00ec4f;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 2px solid;
+   cursor: pointer;
+}
+
+.refuser{
+   
+    background-color:red;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 2px solid;
+    cursor: pointer;
+}
+   
+.accepter:hover{
+    background: #15fd48;
+    
+}
+
+.refuser:hover{
+  
+    background: rgb(255, 60, 0);
+    
+}
+.annuler{
+  color: red;
+  border: 2px solid red;
+  padding: 3px;
+  font-size: 12px;
+  border-radius: 6px;
+  padding-inline: 2%;
+  cursor: pointer;
+}
+.annuler:hover{
+  background: red;;
+  color:white;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+    
+  .user_RES2 button{
+    font-size: 12px;
+    padding-inline:10px ;
+    border:2px solid #009ac9;
+  }
+  .user_RES2 span{
+   font-size: 11px;
+   }
+   .user_RES2 { 
+    margin-top: 10%;
+    margin-bottom: 10%;
+   
+ }
+}
+
+.GRID_RES {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1.5fr 0.5fr; 
+  grid-template-rows: 0.5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "info_RES user_RES"; 
+  padding-inline-start: 5%; 
+  background-color: rgba(255, 255, 255, 0.911);
+  border-bottom:1px solid #565d61;
+  border-top:1px solid #e2e8ec;
+}
+
+.info_RES {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1.6fr 0.4fr; 
+  gap: 0px 0px;
+  font-weight: 500; 
+  grid-template-areas: 
+    "info_content"
+    "button_RES"; 
+  grid-area: info_RES; 
+}
+.info_RES span, u{
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: rgb(2, 11, 90);
+}
+.info_RES u{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.button_RES { 
+  grid-area: button_RES;
+  justify-content: start;
+  display: flex;
+  margin-top: 1%;
+  margin-bottom: 2%; }
+
+.info_content { 
+  margin-top: 2%;
+  grid-area: info_content;
+  font-size: 18px;
+  margin-bottom: 0%;
+  color: #000000;
+}
+.user_RES { 
+  grid-area: user_RES;
+  margin-top: 5%;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  display: grid;
+  align-items: center;
+  margin-bottom: 5%;
+ 
+}
+.user_RES span{
+letter-spacing: 0.5px;
+font-weight: 700;
+font-size: 12px;
+}
+.user_RES button{
+border: none;
+  padding-inline: 10px;
+  border:2px solid #009ac9;
+  margin-top: 3%;
+  background-color: #009ac9;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+.user_RES button:hover{
+  background-color: #04c1fa;
+  color: white;
+  border:2px solid #04c1fa;
+}
+
+.annuler{
+color: red;
+border: 2px solid red;
+padding: 3px;
+font-size: 12px;
+border-radius: 6px;
+padding-inline: 2%;
+cursor: pointer;
+}
+.annuler:hover{
+background: red;;
+color:white;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+  
+.user_RES button{
+  font-size: 12px;
+  padding-inline:10px ;
+  border:2px solid #009ac9;
+}
+.user_RES span{
+ font-size: 11px;
+ }
+ .user_RES { 
+  margin-top: 10%;
+  margin-bottom: 10%;
+ 
+}
+
+}
+
+
+
+
