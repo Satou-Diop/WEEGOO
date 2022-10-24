@@ -1,7 +1,12 @@
-## WEGOO
+## Project Title
+   WEGOO
 
-### Project Details
-Carpooling app
+
+### About the Project
+Wegoo is a carpool app that will:
+Facilitate the meeting between driver and passenger.
+Provide a service that meets user expectations
+Establish a reliable and secure environment when travelling
 
 ## Quick start
 - Clone the repository: `git clone https://github.com/Satou-Diop/WEEGOO.git`.
@@ -20,10 +25,4 @@ Mongo DB
 ### Project Status
 - In progress...
 
-### Social Media
 
-LinkedIn: <https://www.linkedin.com/in/aissatoudiop2109>
-
-Github: <https://www.github.com/Satou-Diop>
-
-Twitter: <https://www.twitter.com/aissatuu_>
