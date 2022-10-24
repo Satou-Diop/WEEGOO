@@ -1,13 +1,29 @@
-# WEEGO
+## WEGOO
 
-## HOW TO TEST
+### Project Details
+Carpooling app
 
-1. Step 1
-Clone the repository: git clone ...
+## Quick start
+- Clone the repository: `git clone https://github.com/Satou-Diop/WEEGOO.git`.
+- Install dependencies: `npm install` 
+- Start server : `npm start`
 
-2. install dependencies
-Run `npm install` to install all dependencies.
+### Technologies Used
+HTML
+CSS
+JavaScript
+React
+NodeJS
+Express JS
+Mongo DB
 
-3. Start server
-....
+### Project Status
+- In progress...
 
+### Social Media
+
+LinkedIn: <https://www.linkedin.com/in/aissatoudiop2109>
+
+Github: <https://www.github.com/Satou-Diop>
+
+Twitter: <https://www.twitter.com/aissatuu_>
