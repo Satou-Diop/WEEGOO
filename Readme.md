@@ -2,7 +2,7 @@
 WEGOO
 
 
-### About the Project
+## About the Project
 Wegoo is a carpool app that will:
 Facilitate the meeting between driver and passenger.
 Provide a service that meets user expectations
@@ -16,10 +16,10 @@ To run this project, install it locally using npm:
 - Install dependencies: `npm install` 
 - Start server : `npm start`
 
-### Version
-Version 1.0
+## Version
+Version 1.0.0
 
-### Technologies Used
+## Technologies Used
 HTML
 CSS
 JavaScript
@@ -28,5 +28,5 @@ NodeJS
 Express JS
 Mongo DB
 
-### Project Status
+## Project Status
 - In progress...
